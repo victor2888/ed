@@ -9,21 +9,25 @@ public class Adivina {
 		int numeroaleatorio;
 		numeroaleatorio=random.nextInt(1000) +1;
 		int num;
-		Scanner Scanner=new Scanner (System.in);
+		Scanner scanner=new Scanner (System.in);
+		boolean acertado;
+		int contadorIntentos = 0;
 		do{
-			System.out.println("Introduce numero");
-			String line=Scanner.nextLine();
+			contadorIntentos++;
+			System.out.printf("Introduce el numero (intento nº %d): ", contadorIntentos);
+			String line=scanner.nextLine();
 			num= Integer.parseInt(line);
 			
 			if(num<numeroaleatorio){
 				System.out.println("Es mas pequeño que el numero aleatorio,te has quedado corto sigue intentandolo);");
 			}
-			else 
-				if(num>numeroaleatorio){
-					System.out.println("El numero es mas mayor que el numero aleatorio, te has pasado, sigue intentandolo");
+			 
+			if(num>numeroaleatorio){
+				System.out.println("El numero es mas mayor que el numero aleatorio, te has pasado, sigue intentandolo");
 				}
-		} while (num!=numeroaleatorio);
-		System.out.println("Muy bien has acertado, campeon");
+			acertado = num == numeroaleatorio;
+		} while (!acertado);
+		System.out.printf
 		
 			
 	}

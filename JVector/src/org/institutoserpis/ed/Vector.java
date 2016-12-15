@@ -20,7 +20,7 @@ public class Vector {
 	}
 	
 
-	
+
 	public static int indexOf (int[] v, int data){
 	int index = 0;
 	while (index < v.length && v[index] != data)
@@ -29,6 +29,18 @@ public class Vector {
 		return -1;
 	return index;
 	
+	}
+	
+	public static int min (int[] v){
+		int min= v[0];
+		for(int index=1; index<v.length;index++){
+			if(v[index]<min){
+				min= v[index];
+		
+				
+			}
+		}
+		return min;
 	}
 			
 }		

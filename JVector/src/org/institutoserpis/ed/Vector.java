@@ -53,7 +53,35 @@ public class Vector {
 		}
 		return min;
 	}
-			
-}		
+	public static void selectionSortUgly( int[] v){
+	for(int itemIndex=0; itemIndex < v.length -1; itemIndex++){
+		int indexOfMin = itemIndex;
+		for (int index = itemIndex +1; index < v.length; index++ )
+			if(v[index] < v[indexOfMin])
+				indexOfMin = index;
+		int aux = v[itemIndex];
+		v[indexOfMin] = aux;
+	}		
+}	
 
-		
+	private static int indexOfMin(int[] v, int initialIndex) {
+		int indexOfMin = initialIndex;
+		for (int index = initialIndex + 1; index < v.length; index++)
+			if (v[index] < v[indexOfMin])
+				indexOfMin = index;
+		return indexOfMin;
+	}
+
+	private static void swap(int[] v, int indexOne, int indexTwo){
+		int aux= v[indexOne];
+		v[indexOne] = v[indexTwo];
+		v[indexTwo] = aux;
+	}
+
+	public static void selectionSort(int[] v) {
+		for (int itemIndex = 0; itemIndex < v.length - 1; itemIndex++) {
+			int indexOfMin = indexOfMin(v, itemIndex);
+			swap(v, itemIndex, indexOfMin);
+		}
+	}
+}

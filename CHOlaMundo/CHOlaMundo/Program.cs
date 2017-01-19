@@ -1,12 +1,15 @@
 using System;
 
-namespace CHOlaMundo
+namespace Org.InstitutoSerpis.Ed
 {
-	class MainClass
+	class HolaMundo
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
-		}
+			Console.Write ("Introduce tu nombre: ");
+			String nombre = Console.ReadLine ();
+			Console.WriteLine ("Hola " + nombre);
+			
+       }
 	}
 }

@@ -1,0 +1,7 @@
+2017119 Victor Garcia
+Instalados en ubuntu 14.04
+monodevelop-nunit
+monodevelop-versioncontrol
+monodevelop-browser
+monodevelop-gtk-2.0-manual
+monodevelop-nunit-manual

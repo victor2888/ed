@@ -73,7 +73,7 @@ public class Vector {
 	}
 
 	private static void swap(int[] v, int indexOne, int indexTwo){
-		int aux= v[indexOne];
+		int aux = v[indexOne];
 		v[indexOne] = v[indexTwo];
 		v[indexTwo] = aux;
 	}

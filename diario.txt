@@ -1,7 +1,13 @@
 2017119 Victor Garcia
-Instalados en ubuntu 14.04
+Instalados en ubuntu 14.04:
 monodevelop-nunit
 monodevelop-versioncontrol
 monodevelop-browser
 monodevelop-gtk-2.0-manual
 monodevelop-nunit-manual
+Instalados para android-studio:
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1
+sudo apt-get install qemu-kvm
+sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+
+
